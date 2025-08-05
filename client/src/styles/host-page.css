@@ -1,0 +1,18 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width:580px) {
+    .host-div{
+        border-bottom:0 ;
+    }
+    .center{
+        text-align: center;
+        /* font-size: 1.2rem; */
+    }
+    /* .center p{
+        font-size: 1rem;
+    } */
+}

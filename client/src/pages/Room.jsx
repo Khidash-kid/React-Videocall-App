@@ -3,13 +3,16 @@ import ReactPlayer from "react-player";
 import peer from "../service/peer";
 import "../styles/Room.css";
 import { useSocket } from "../context/SocketProvider";
+import { useNavigate } from "react-router-dom";
 
 const RoomPage = () => {
+  const navigate = useNavigate();
   const socket = useSocket();
   const [remoteSocketId, setRemoteSocketId] = useState(null);
   const [myStream, setMyStream] = useState(null);
   const [remoteStream, setRemoteStream] = useState(null);
   const [isMuted, setIsMuted] = useState(false);
+  // const [isRemoteMuted, setIsRemoteMuted] = useState(false);
   const [isVideoOff, setIsVideoOff] = useState(false);
   const [remoteVideoVisible, setRemoteVideoVisible] = useState(true);
   const [isRecording, setIsRecording] = useState(false);
@@ -129,14 +132,14 @@ const RoomPage = () => {
     }
   };
 
-   const toggleRemoteMute = () => {
-    if (myStream) {
-      myStream.getAudioTracks().forEach((track) => {
-        track.enabled = !track.enabled;
-      });
-      setIsMuted((prev) => !prev);
-    }
-  };
+  //  const toggleRemoteMute = () => {
+  //   if (myStream) {
+  //     myStream.getAudioTracks().forEach((track) => {
+  //       track.enabled = !track.enabled;
+  //     });
+  //     setIsMuted((prev) => !prev);
+  //   }
+  // };
 
   const toggleVideo = () => {
     if (myStream) {
@@ -210,6 +213,7 @@ const RoomPage = () => {
       setRemoteStream(null);
     }
     alert("Call Ended");
+    navigate("/Main-page");
   };
 
   return (
@@ -257,9 +261,9 @@ const RoomPage = () => {
         <button className="mute-btn db" onClick={toggleMute}>
           {isMuted ? "Unmute" : "Mute"} 🔇
         </button>
-        <button className="remote-mute-btn db" onClick={toggleRemoteMute}>
+        {/* <button className="remote-mute-btn db" onClick={toggleRemoteMute}>
           {isMuted ? "Unmute" : "Mute"} 🔇
-        </button>
+        </button> */}
         <button className="video-btn db" onClick={toggleVideo}>
           {isVideoOff ? "Start Video" : "Stop Video"}
         </button>
@@ -279,4 +283,4 @@ const RoomPage = () => {
   );
 };
 
-export default RoomPage;
+export default RoomPage;

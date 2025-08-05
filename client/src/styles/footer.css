@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.footer-component{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.footer-component p{
+    color: #888;
+    font-size: 14px;
+    display: inline;
+}
+.footer-component a{
+    color: #888;
+    text-decoration: none;
+}
+
+
+
+.footer-component a:hover{
+    text-decoration: underline;
+} 
+
+@media screen and (max-width:800px){
+    .footer-component p{
+        font-size: 12px;
+    }
+    .footer-component a{
+        font-size: 12px;
+    }
+    .footer-content{
+        text-align: center;
+    }
+}

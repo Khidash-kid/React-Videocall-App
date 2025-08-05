@@ -1,0 +1,88 @@
+
+
+.SignUp{
+    display: flex;
+}
+.left{
+    height: 92vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.left img{
+    height: 60%;
+    width: 75%;
+}
+.right{
+    color: black;
+    width: 50%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-p{
+    color: gray;
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin:20px 0px 0px 20px;
+    text-align: center ;
+}
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(206, 202, 202);
+    padding-left: 10px;
+    margin-top: 20px;
+    display: block;
+}
+.btn-sign{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color:#0e72ed;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.style{
+    width: 50%;;
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid #0e72ed;
+}
+
+a{
+    text-decoration: none;
+    color: #1877f2;
+}
+.footer{
+    position: relative;
+    top: 7rem;
+    text-align: center;
+    width: 50%;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.footer-panel{
+    color: #1877f2;
+}
+.footer p{
+    display: inline;
+}
+
+.footer-copyright{
+    margin-top: 1.3rem;
+}
+
+

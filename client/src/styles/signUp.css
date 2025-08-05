@@ -1,0 +1,88 @@
+@media  (max-width: 1040px) {
+  .right {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .style {
+    flex-basis: 45%;
+    padding: 10px;
+  }
+  .input-field input {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+  }
+  
+  .heading h1 {
+    font-size: 24px;
+    text-align: center;
+  } 
+    .button {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+    .left{
+        display: none;
+    }
+    .btn-sign{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 875px) {
+   
+    .right {
+        width: 100%;
+        padding: 20px;
+    }
+    .style {
+        width: 50%;
+    }
+    .sign-p {
+        font-size: 0.8rem;
+        margin: 10px 0;
+    }
+    input {
+        width: calc(100% - 20px);
+        margin-top: 10px;
+    }
+    .btn-sign {
+        width: calc(100% - 20px);
+        margin-top: 10px;
+    }
+  
+    .p1,.p2{
+      display: none;
+    }
+}
+
+@media screen and (max-width: 650) {
+    .right {
+        width: 100%;
+        min-width: 100%;
+      display: block;
+
+        padding: 20px;
+    }
+    .style {
+      width: 90% ;
+      
+    }
+    .sign-p {
+        font-size: 0.9rem;
+        margin: 20px 0;
+    }
+    input {
+        width: calc(100% - 20px);
+        margin-top: 10px;
+    }
+  
+}
+@media screen and (max-width:500px){
+  .remove{
+    display: none;
+  }
+  
+}

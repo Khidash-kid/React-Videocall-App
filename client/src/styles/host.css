@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffffff7;
+}
+
+.host-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+}
+.host-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    width: 700px;
+    border-bottom: 0.5px solid rgb(231, 229, 229);
+}
+
+.room-input{
+   width: 200px;
+}
+
+.host-h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.host-h p,.host-h2 p{
+    font-size: 1.3rem;
+    font-weight: 330;
+}
+
+.host-p p{
+    font-weight: 400;
+    color: #f9f9fd;
+}
+
+.host-btn button{
+    width: 200px;
+    height: 50px;
+    padding: 5px;
+    font-size: 1rem;
+    background-color: #0078d4;
+    color:#fffffff7 ;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.host-btn button:hover{
+    opacity: 0.9;
+}
+
+a:hover{
+    text-decoration: underline;
+}

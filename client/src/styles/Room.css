@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.entire-video{
+    font-family:'Courier New', Courier, monospace;
+    /* background-color:darkorchid; 
+    color: #fff; */
+    height: 100vh;
+}
+
+.entire-video{
+    text-align: center;
+}
+
+.video-center{
+      height: 600px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.video{
+    height: 530px;
+    width: 950px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    margin-left: 10px;
+}
+
+.room-btn{
+    margin-top: 10px;
+    background-color: #fff;
+    color: darkorchid;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.stream-btn{
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    color: darkorchid;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.v1,.v2{
+    height: 500px;
+    width: 400px;
+    /* border: 2px solid #fff; */
+    border-radius: 10px;
+}
+
+.down-btn-grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+    height: 40px;
+}
+
+.db{
+    background-color: #fff;
+    color: darkorchid;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.db:hover{
+    background-color: darkorchid;
+    color: #fff;
+}
+.room-btn:hover{
+    background-color: darkorchid;
+    color: #fff;    
+}
+.stream-btn:hover{
+     background-color: darkorchid;
+    color: #fff;
+}
+
+@media screen and (max-width:830px){
+    .video{
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        /* flex-wrap: wrap; */
+    }
+    /* .v1,.v2{
+        height: 270px;
+    }
+    .react-playetr{
+        height: 200px;
+        width: 400px;
+    } */
+    .down-btn-grp{
+        margin-top: 30px;
+    }
+    
+}
+/* 
+@media screen and (max-width:405px){
+     .v1{
+        width: 370px;
+    }
+     .v2{
+        margin-top: 35px;
+        width: 370px;
+    }
+} */
+@media screen and (max-width:800px){
+     .down-btn-grp{
+        flex-wrap: wrap;
+}   
+}
+.react-player {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Container to help center and layout */
+.v1, .v2 {
+  width: 100%;
+  max-width: 400px;
+  margin: 10px auto;
+}
+
+/* Media queries */
+@media screen and (max-width: 830px) {
+  .react-player {
+    max-width: 350px;
+    text-align: center;
+  }
+  .v1,.v2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.room-btn,.stream-btn{
+    width: 100%;
+    max-width: 200px;
+    margin: 5px auto;
+}
+.video-center{
+    margin-top: 5px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  .react-player {
+    max-width: 250px;
+}
+.v1,.v2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+}
